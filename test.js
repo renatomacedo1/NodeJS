@@ -26,6 +26,29 @@ const Postagem = sequelize.define("postagens", {
   }
 });
 
-//Postagem.sync({ force: true }); // Cria a tabela. Basta usar uma vez
+// Postagem.sync({ force: true }); // Cria a tabela. Basta usar uma vez
+
+// Inserção de dados
+/* Postagem.create({
+  titulo: "Titulo qqer",
+  condeudo: "sdkfjhsdljfhkudshfusdhuf osduhfd"
+}); */
 
 // Model de Usuários
+
+const Usuario = sequelize.define("usuarios", {
+  nome: {
+    type: Sequelize.STRING
+  },
+  sobrenome: {
+    type: Sequelize.STRING
+  },
+  idade: {
+    type: Sequelize.INTEGER
+  },
+  email: {
+    type: Sequelize.STRING
+  }
+});
+
+// Usuario.sync({ force: true });
